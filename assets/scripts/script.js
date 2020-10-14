@@ -29,7 +29,7 @@ $(".save").on("click", function () {
 
 $(".load").on("click", function () {
     $(".grid-container").html(localStorage.getItem("userLayout"));
-    $(".grid-row").dad({
+    $(".grid-row-drag").dad({
         exchangeable: false,
         placeholderTarget: ".item"
     });
@@ -56,7 +56,7 @@ function loadUser(username) {
             $cont.append($row);
 
             $row = $("<div>");
-            $row.addClass("row grid-row area")
+            $row.addClass("row grid-row-drag area")
             $row.dad({
                 exchangeable: false,
                 placeholderTarget: ".item"
