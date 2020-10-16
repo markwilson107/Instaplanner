@@ -6,6 +6,40 @@
     background-color: white;
 }
 
+.preview-nav {
+    margin-top:-3px;
+    color: white;
+}
+
+.preview-title {    
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.story-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height:calc(100vh - 60px);    
+    padding:10px;
+    z-index: 9999;
+}
+
+.container-fluid {
+
+}
+
+.story-title {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: rgb(160, 160, 160);
+}
+
+.story-card {
+    background-color: #f8f9fa;
+}
+
 .user-avatar {
     margin-left: 20px;
     border-radius: 50%;
@@ -109,6 +143,25 @@
     padding-right: 1px;
     padding-top:2px;
     padding-bottom: 1px;
+    position: relative;
+
+}
+
+.img-story-box {
+    padding:10px;
+    position: relative;
+
+}
+
+.img-story {
+    width: 100%;
+    padding-bottom: 100%;
+    height:0;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: center;
+    box-shadow: 5px 5px 5px -4px rgba(0, 0, 0, 0.6);    
+
 }
 
 .img-grid:hover {
@@ -121,30 +174,47 @@
     float:right;
     overflow-y: auto;
     overflow-x: hidden;
-    max-height:calc(100vh - 60px);
+    height:calc(100vh - 60px);
+
 }
 
-.grid-row {
+.grid-srow-drag {
+    position: relative;
 
+}
+
+/*hide scrollbars*/
+.grid-container::-webkit-scrollbar {
+    display: none;
+  }
+.story-container::-webkit-scrollbar {
+    display: none;
+}
+  
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.grid-container .story-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 #wrapper {
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
+
 }
   
 #sidebar-wrapper {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        z-index: 1000;
-        background-color: #f5f5f5;
-  min-height: 100vh;
-  margin-left: -18rem;
-    /*  -webkit-transition: margin .25s ease-out;
-  -moz-transition: margin .25s ease-out;
-  -o-transition: margin .25s ease-out;
-  transition: margin .25s ease-out;*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    margin-left: -18rem;
+  /*-webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;*/
 }
 
 #sidebar-wrapper .sidebar-heading {

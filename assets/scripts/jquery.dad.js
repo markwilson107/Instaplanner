@@ -263,7 +263,7 @@
     this.$placeholder = $placeholder;
 
     // Add elements to container
-    $current.append($placeholder).append($clone);
+    $current.prepend($placeholder).prepend($clone);
 
     // Set clone and placeholder position
     this.updateClonePosition();
@@ -372,11 +372,11 @@
 
     if (isContainer) {
       // Move target
-      $element.append($target);
+      $element.prepend($target);
 
       // And also move dad elements for positioning
-      $element.append($clone);
-      $element.append($placeholder);
+      $element.prepend($clone);
+      $element.prepend($placeholder);
 
       // Update current container
       this.$current = $element;
