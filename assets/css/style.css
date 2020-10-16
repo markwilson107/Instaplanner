@@ -6,6 +6,10 @@
     background-color: white;
 }
 
+.mobile-show {
+    display:none;
+}
+
 .preview-nav {
     margin-top:-3px;
     color: white;
@@ -222,6 +226,12 @@
   font-size: 2.1rem;
   font-family: 'Kaushan Script', cursive;
 }
+
+.mobile-heading {
+    display:none;
+    font-size: 1.5rem;
+    font-family: 'Kaushan Script', cursive;
+  }
   
 #sidebar-wrapper .list-group {
   width: 18rem;
@@ -261,5 +271,14 @@
 .grid-container {
     width:100%;
 }
+
+.mobile-hide {
+    display:none;
+}
+
+.mobile-show {
+    display:block;
+
+  }
 }
   
