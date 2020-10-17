@@ -1,9 +1,22 @@
+body {
+    z-index:1;
+}
+
 .main-contents , .search-sidebar {
     background-color: #fafafa;
 }
 
 .navbar {
     background-color: white;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgb(0, 0, 0, 0);
+    border: 0;
+}
+
+.nav-tabs {
+    font-size: 12px;
 }
 
 .mobile-show {
@@ -21,15 +34,10 @@
 }
 
 .story-container {
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
     height:calc(100vh - 60px);    
     padding:10px;
-    z-index: 9999;
-}
-
-.container-fluid {
-
 }
 
 .story-title {
@@ -40,8 +48,11 @@
     color: rgb(160, 160, 160);
 }
 
-.story-card {
-    background-color: #f8f9fa;
+.story-preview {
+    padding:20px;
+    border-left: 1px solid rgb(160, 160, 160, 30%);
+    border-right: 1px solid rgb(160, 160, 160, 30%);
+    border-bottom: 1px solid rgb(160, 160, 160, 30%);
 }
 
 .user-avatar {
@@ -140,6 +151,8 @@
     background-repeat: no-repeat;
     background-size:  cover;
     background-position: center;
+    z-index:999;
+    opacity: .99;
 }
 
 .img-grid-box {
@@ -152,9 +165,11 @@
 }
 
 .img-story-box {
-    padding:10px;
+    padding-left:2px;
+    padding-right: 1px;
+    padding-top:2px;
+    padding-bottom: 1px;
     position: relative;
-
 }
 
 .img-story {
@@ -242,29 +257,42 @@
   margin-left:0rem;
   margin-top:0rem;
   max-height: 100vh;
+
 }
   
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
 }
 
-  
-@media (min-width: 768px) {
-  #sidebar-wrapper {
-    margin-left: 0;
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 162, 255);
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 57px;
+    width: 57px;
+}
+#myBtn:hover {
+    background-color: rgb(53, 181, 255);
 }
   
-#page-content-wrapper {
-    min-width: 0;
-    width: 100%;
-    margin-left:18rem;
-}
-  
-#wrapper.toggled #sidebar-wrapper {
-    margin-left: -18rem;
-}
+@media (max-width: 990px) {
 
-
+    .mobile-hide {
+        display:none;
+    }
+    
+    .mobile-show {
+        display:block;
+    
+    }
 }
 
 @media (max-width: 768px) {
@@ -272,13 +300,25 @@
     width:100%;
 }
 
-.mobile-hide {
-    display:none;
+#myBtn {
+    display: block;
+}
 }
 
-.mobile-show {
-    display:block;
+@media (min-width: 990px) {
 
-  }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -18rem;
+    }
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+      
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+        margin-left:18rem;
+    }
+      
 }
   
