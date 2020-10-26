@@ -14,3 +14,5 @@ Instagram feed planner with hopeful future secheduled uploads capability.
 * Calander
   - Plan your uploads with images represented on calander.
   
+  ## Deployed Application
+  https://markwilson107.github.io/Instaplanner/
