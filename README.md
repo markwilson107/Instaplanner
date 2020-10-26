@@ -10,9 +10,9 @@ Instagram feed planner with hopeful future secheduled uploads capability.
   - Make storyboard tabs do something.
   - Ability to add tabs.
 * Fix mobile drag and drop problems with scrolling (current fix is not ideal).
- - Tap and hold to drag on mobile.
+  - Tap and hold to drag on mobile.
 * Calander
   - Plan your uploads with images represented on calander.
   
-  ## Deployed Application
-  https://markwilson107.github.io/Instaplanner/
+## Deployed Application
+https://markwilson107.github.io/Instaplanner/
